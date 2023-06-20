@@ -32,12 +32,12 @@ const CreatePost = () => {
     }
   };
   return (
-    <div className="flex  justify-center items-center gap-4 mt-8 w-[600px]">
+    <div className="flex p-4 justify-center items-center gap-4 mt-8 w-[600px] h-screen">
       <form onSubmit={createPostapi} className="flex flex-col gap-4 w-full">
         <label className="text-md text-start font-medium">Title :</label>
         <input
           type="text"
-          className="shadow-md border-2 border-gray-300 rounded-md w-full p-2 outline-none mb-6"
+          className="shadow-md border-2 text-black border-gray-300 rounded-md w-full p-2 outline-none mb-6"
           name="title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
@@ -46,7 +46,7 @@ const CreatePost = () => {
         <label className="text-md text-start font-medium">Description :</label>
         <input
           type="text"
-          className="shadow-md border-2 border-gray-300 rounded-md w-full p-2 outline-none mb-6"
+          className="shadow-md border-2 border-gray-300 text-black rounded-md w-full p-2 outline-none mb-6"
           name="description"
           value={description}
           onChange={(e) => setDescription(e.target.value)}
@@ -55,7 +55,7 @@ const CreatePost = () => {
         <label className="text-md text-start font-medium">ImageURL :</label>
         <input
           type="text"
-          className="shadow-md border-2 border-gray-300 rounded-md w-full p-2 outline-none mb-6"
+          className="shadow-md border-2 border-gray-300 rounded-md w-full text-black p-2 outline-none mb-6"
           name="image"
           value={image}
           onChange={(e) => setImage(e.target.value)}
@@ -67,7 +67,7 @@ const CreatePost = () => {
           name="text"
           cols="30"
           rows="10"
-          className="shadow-md border-2 border-gray-300 rounded-md w-full p-2
+          className="shadow-md border-2 text-black border-gray-300 rounded-md w-full p-2
         outline-none"
           onChange={(e) => setContent(e.target.value)}
           defaultValue={""}

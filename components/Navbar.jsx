@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import DarkModeToggle from "./Darkmode/DarkModeToggle";
 
 const Navbar = () => {
   return (
@@ -8,6 +9,7 @@ const Navbar = () => {
         Blogi
       </Link>
       <div className="flex gap-4 justify-center items-center">
+        <DarkModeToggle />
         <Link className="font-semibold text-lg" href="/">
           Home
         </Link>
