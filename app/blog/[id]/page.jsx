@@ -16,8 +16,8 @@ async function getData(id) {
 const BlogPost = async ({ params }) => {
   const data = await getData(params.id);
   return (
-    <div className="flex items-center justify-center flex-col mt-32 ">
-      <div className="flex flex-col justify-center items-center  w-[1280px] h-[100vh]  p-2">
+    <div className="flex items-center justify-center flex-col mt-32 h-screen">
+      <div className="flex flex-col justify-center items-center  w-[1280px]   p-2">
         <Image
           src={data.image || "https://placehold.co/600x400"}
           width={1000}

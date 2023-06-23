@@ -32,8 +32,8 @@ const CreatePost = () => {
     }
   };
   return (
-    <div className="flex p-4 justify-center items-center gap-4 mt-8 w-[600px] h-screen">
-      <form onSubmit={createPostapi} className="flex flex-col gap-4 w-full">
+    <div className="flex p-2 justify-center items-center gap-4 mt-6 w-[500px] h-screen">
+      <form onSubmit={createPostapi} className="flex flex-col gap-4 w-[400px]">
         <label className="text-md text-start font-medium">Title :</label>
         <input
           type="text"

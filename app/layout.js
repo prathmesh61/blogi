@@ -3,6 +3,7 @@ import "./globals.css";
 import { Inter, Outfit } from "next/font/google";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/Context/Context";
+import HomePost from "@/components/HomePost";
 
 const inter = Inter({ subsets: ["latin"] });
 const outfit = Outfit({ subsets: ["latin"] });
@@ -15,16 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={outfit.className} suppressHydrationWarning={true}>
-        <div className=" ">
-          <div className="  ">
-            <ThemeProvider>
-              <div className="max-w-screen-2xl h-full mx-auto flex flex-col justify-between">
-                <Navbar />
-                {children}
-              </div>
-            </ThemeProvider>
+        <ThemeProvider>
+          <div className="max-w-screen-2xl h-screen mx-auto flex flex-col justify-between">
+            <Navbar />
+            {children}
+            <Footer />
           </div>
-        </div>
+        </ThemeProvider>
       </body>
     </html>
   );

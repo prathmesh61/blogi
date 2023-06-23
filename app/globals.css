@@ -21,9 +21,11 @@ html {
 .light {
   background-color: rgb(244, 239, 239);
   color: #111;
+  height: 100%;
 }
 
 .dark {
   background-color: #111;
   color: #fff;
+  height: 100%;
 }
